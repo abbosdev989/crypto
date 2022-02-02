@@ -1,0 +1,207 @@
+body {
+    background: #0e1115;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.coin_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.layout {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+/*.img_logo{*/
+/*    border-radius: 20px;*/
+/*}*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    perspective: 500px;
+    margin-left: 200px;
+}
+
+.pannel {
+    position: relative;
+    width: 20px;
+    height: 120px;
+    overflow: hidden;
+    animation: rotateAnim 6s var(--delay) infinite ease-in-out alternate;
+}
+
+@keyframes rotateAnim {
+    0%, 10% {
+        transform: rotateX(0deg);
+    }
+    90%, 100% {
+        transform: rotateX(720deg);
+    }
+}
+.pannel::before {
+    content: "Crypto";
+    font-size: 96px;
+    position: absolute;
+    left: var(--left);
+    width: max-content;
+    color: hsl(var(--hue), 75%, 65%);
+}
+
+.pannel:nth-child(1) {
+    --left: 0px;
+    --hue: 0;
+    --delay: 0s;
+}
+
+.pannel:nth-child(2) {
+    --left: -20px;
+    --hue: 15;
+    --delay: 0.1s;
+}
+
+.pannel:nth-child(3) {
+    --left: -40px;
+    --hue: 30;
+    --delay: 0.2s;
+}
+
+.pannel:nth-child(4) {
+    --left: -60px;
+    --hue: 45;
+    --delay: 0.3s;
+}
+
+.pannel:nth-child(5) {
+    --left: -80px;
+    --hue: 60;
+    --delay: 0.4s;
+}
+
+.pannel:nth-child(6) {
+    --left: -100px;
+    --hue: 75;
+    --delay: 0.5s;
+}
+
+.pannel:nth-child(7) {
+    --left: -120px;
+    --hue: 90;
+    --delay: 0.6s;
+}
+
+.pannel:nth-child(8) {
+    --left: -140px;
+    --hue: 105;
+    --delay: 0.7s;
+}
+
+.pannel:nth-child(9) {
+    --left: -160px;
+    --hue: 120;
+    --delay: 0.8s;
+}
+
+.pannel:nth-child(10) {
+    --left: -180px;
+    --hue: 135;
+    --delay: 0.9s;
+}
+
+.pannel:nth-child(11) {
+    --left: -200px;
+    --hue: 150;
+    --delay: 1s;
+}
+
+.pannel:nth-child(12) {
+    --left: -220px;
+    --hue: 165;
+    --delay: 1.1s;
+}
+
+.pannel:nth-child(13) {
+    --left: -240px;
+    --hue: 180;
+    --delay: 1.2s;
+}
+
+.pannel:nth-child(14) {
+    --left: -260px;
+    --hue: 195;
+    --delay: 1.3s;
+}
+
+.pannel:nth-child(15) {
+    --left: -280px;
+    --hue: 210;
+    --delay: 1.4s;
+}
+
+.pannel:nth-child(16) {
+    --left: -300px;
+    --hue: 225;
+    --delay: 1.5s;
+}
+
+.pannel:nth-child(17) {
+    --left: -320px;
+    --hue: 240;
+    --delay: 1.6s;
+}
+
+.pannel:nth-child(18) {
+    --left: -340px;
+    --hue: 255;
+    --delay: 1.7s;
+}
+
+.pannel:nth-child(19) {
+    --left: -360px;
+    --hue: 270;
+    --delay: 1.8s;
+}
+
+.pannel:nth-child(20) {
+    --left: -380px;
+    --hue: 285;
+    --delay: 1.9s;
+}
+
+.pannel:nth-child(21) {
+    --left: -400px;
+    --hue: 300;
+    --delay: 2s;
+}
+
+.pannel:nth-child(22) {
+    --left: -420px;
+    --hue: 315;
+    --delay: 2.1s;
+}
+
+.pannel:nth-child(23) {
+    --left: -440px;
+    --hue: 330;
+    --delay: 2.2s;
+}
+
+.pannel:nth-child(24) {
+    --left: -460px;
+    --hue: 345;
+    --delay: 2.3s;
+}
